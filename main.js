@@ -40,11 +40,12 @@ let linearStartTime = performance.now();
 linearSearch(myArray, 375);
 let linearEndTime = performance.now();
 let lineSearchTime = linearEndTime - linearStartTime;
-console.log("Linear Search took: " + lineSearchTime + " milliseconds");
+console.log("Linear Search took approximately: " + Math.round(lineSearchTime) + " milliseconds");
 
 
 let binaryStartTime = performance.now();
 BinarySearch(myArray, 375);
 let binaryEndTime = performance.now();
 let binaSearchTime = binaryEndTime - binaryStartTime;
-console.log("Linear Search took: " + binaSearchTime + " milliseconds");
+
+console.log("Binary Search took approximately: " + Math.round(binaSearchTime) + " milliseconds");
